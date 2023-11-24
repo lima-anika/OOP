@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+int test,i,j,f=0,k,js,y;
+string a,b;
+cin>>test;
+
+for(i=0;i<test;i++)
+{
+    cin>>a>>b;
+    string d="";
+
+    int blen=b.size();
+
+    int lena=a.size();
+
+    for(j=0;j<lena;j++)
+
+    {
+        string e="";
+
+        if(b.front()==a[j])
+        {
+
+             js=j;
+             y=j;
+
+            for(k=0;k<blen;k++)
+            {
+                if(a[y]==b[k])
+                {
+                e+=a[y];
+                }
+                y++;
+            }
+        }
+
+        if(e==b)
+        {
+
+            int a1=0,b1=0,b2=0;
+
+            a1=js,b1=blen-1;
+
+            b2=js+b1;
+
+            d+="#";
+
+            //a.replace(a1,b2,"#");
+            j=j+b1;
+        }
+
+        else
+        {
+           d=d+a[j];
+        }
+    }
+
+    cout<<d<<endl;
+}
+}
