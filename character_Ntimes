@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+
+{
+    int n,i,j;
+
+    cin>>n;
+    int num;
+    char c;
+
+    for(i=0;i<n;i++)
+    {
+        cin>>num>>c;
+        for(j=0;j<num;j++)
+        {
+            cout<<c;
+            if(j==num-1)
+            {
+                continue;
+            }
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+
+}
