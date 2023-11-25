@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+
+{
+    long long x,n,i=2,sum=0,k=2,y;
+
+    cin>>x>>n;
+
+    while(1)
+    {
+        y=pow(x,k);
+        sum+=y;
+        k+=2;
+        if(k>n)
+        {
+            break;
+        }
+    }
+
+    cout<<sum;
+}
